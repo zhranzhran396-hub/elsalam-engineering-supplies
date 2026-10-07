@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageHeaderTitle">السلام للصناعات الهندسية والتوريدات</title>
+    <!-- Dynamic Favicon -->
+    <link id="dynamicFavicon" rel="icon" href="https://placehold.co/32x32/1e293b/f59e0b?text=S">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Cairo -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+        .custom-bg {
+            background-color: #0f172a;
+        }
+    </style>
+</head>
+<body class="custom-bg text-gray-100 min-h-screen flex flex-col transition-colors duration-500" id="mainBody">
+
+    <!-- Navbar -->
+    <nav id="mainNavbar" class="bg-gray-900/90 backdrop-blur-md border-b border-gray-800 sticky top-0 z-50 px-4 lg:px-12 py-4 flex justify-between items-center shadow-xl transition-colors duration-300">
+        <div class="flex items-center space-x-3 space-x-reverse">
+            <div id="brandIconWrapper" class="bg-transparent text-gray-950 p-0 rounded-xl font-black text-xl flex items-center justify-center overflow-hidden w-12 h-12">
+                <img id="brandLogoImg" src="https://placehold.co/100x100/1e293b/f59e0b?text=EL-SALAM" alt="Logo" class="w-full h-full object-contain rounded-lg" onerror="this.src='https://placehold.co/100x100/1e293b/f59e0b?text=S'">
+            </div>
+            <div>
+                <span id="navBrandName" class="text-xl font-black tracking-wider text-white">السلام للصناعات الهندسية والتوريدات</span>
+                <span class="block text-xs text-amber-400 font-semibold">تصنيع وتوريد آلات تجهيز وإنتاج الأعلاف الحيوانية</span>
+            </div>
+        </div>
+
+        <div class="hidden md:flex items-center space-x-6 space-x-reverse font-medium text-sm">
+            <a href="#home" class="hover:text-amber-400 transition">الرئيسية</a>
+            <a href="#products" class="hover:text-amber-400 transition">المكينات والخطوط</a>
+            <a href="#videos" class="hover:text-amber-400 transition">الفيديوهات والروابط</a>
+            <a href="#about" class="hover:text-amber-400 transition">من نحن</a>
+            <a href="#contact" class="hover:text-amber-400 transition">تواصل معنا</a>
+        </div>
+
+        <div class="flex items-center space-x-3 space-x-reverse">
+            <div id="authStatusArea" class="flex items-center space-x-2 space-x-reverse">
+                <!-- Dynamically populated auth controls -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Dedicated Industrial Banner Card -->
+    <header id="home" class="relative overflow-hidden py-16 lg:py-24 px-4 text-center border-b border-gray-800">
+        <div class="absolute inset-0 z-0 opacity-10 bg-[radial-gradient(#f59e0b_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        
+        <div class="relative z-10 max-w-5xl mx-auto">
+            <!-- Dedicated Industrial Image/Banner Card with Curved Edges -->
+            <div id="heroCardBanner" class="relative rounded-3xl overflow-hidden shadow-2xl border border-gray-700 bg-gray-900/80 p-8 lg:p-12 mb-10 transition-all duration-300">
+                <!-- Optional Industrial Background Image for the Card -->
+                <div id="heroCardBgImageOverlay" class="absolute inset-0 z-0 opacity-20 bg-cover bg-center hidden"></div>
+                <div class="relative z-10">
+                    <span class="bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs px-4 py-1.5 rounded-full uppercase tracking-widest font-bold inline-block mb-6">الصدارة في تكنولوجيا تصنيع الأعلاف</span>
+                    <h1 class="text-3xl lg:text-5xl font-black text-white leading-tight mb-6">
+                        آلات ومعدات مصانع الأعلاف بأعلى <span class="text-amber-400 underline decoration-amber-500/30">معايير الجودة العالمية</span>
+                    </h1>
+                    <p class="text-gray-300 text-base lg:text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
+                        تصنيع وتوريد آلات تجهيز وإنتاج الأعلاف الحيوانية والدواجن والأسماك بكفاءة عالية وأسعار تنافسية.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <a href="#products" id="heroCtaBtn" class="bg-amber-500 hover:bg-amber-600 text-gray-950 font-bold px-8 py-3.5 rounded-xl shadow-lg transition transform hover:-translate-y-0.5 flex items-center space-x-2 space-x-reverse">
+                            <i class="fa-solid fa-cogs"></i>
+                            <span>استعرض المكينات والمنتجات</span>
+                        </a>
+                        <a href="#contact" class="bg-gray-800 hover:bg-gray-700 text-white font-bold px-8 py-3.5 rounded-xl border border-gray-700 transition">
+                            اطلب استشارة هندسية
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Admin Toolkit Section (Restricted to zhranzhran396@gmail.com) -->
+    <section id="adminToolkitSection" class="hidden bg-gray-950/95 border-b border-amber-500/40 p-6 shadow-2xl relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex items-center justify-between mb-6 border-b border-gray-800 pb-4">
+                <div class="flex items-center space-x-3 space-x-reverse">
+                    <div class="bg-amber-500 text-gray-950 p-2.5 rounded-lg font-bold">
+                        <i class="fa-solid fa-user-shield text-xl"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-bold text-amber-400">لوحة تحكم المدير العام المتقدمة</h2>
+                        <p class="text-xs text-gray-400">تحكم كامل برفع الصور المتعددة، الفيديوهات، تعديل المنتجات، وتغيير الألوان والبطاقة الصناعية</p>
+                    </div>
+                </div>
+                <span class="bg-amber-500/20 text-amber-400 text-xs px-3 py-1 rounded-full font-bold border border-amber-500/30">صلاحيات المدير مفعلة (zhranzhran396@gmail.com)</span>
+            </div>
+
+            <!-- Admin Grid Tools -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                
+                <!-- Tool 1: Add New Machine -->
+                <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6 shadow-xl">
+                    <h3 class="text-base font-bold text-white mb-4 flex items-center space-x-2 space-x-reverse">
+                        <i class="fa-solid fa-circle-plus text-amber-400"></i>
+                        <span>إضافة ماكينة جديدة (صور متعددة)</span>
+                    </h3>
+                    <form id="addProductForm" onsubmit="handleAddProduct(event)" class="space-y-3">
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-300 mb-1">اسم الماكينة / المنتج</label>
+                            <input type="text" id="prodName" required placeholder="مثال: مكبس أعلاف 10 طن" class="w-full bg-gray-800 border border-gray-700 rounded-xl px-3 py-2 text-sm text-white focus:outline-none focus:border-amber-500">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-300 mb-1">رفع صور المنتج (اختر عدة صور)</label>
+                            <input type="file" id="prodImageFiles" accept="image/*" multiple required class="w-full bg-gray-800 border border-gray-700 rounded-xl px-3 py-1.5 text-xs text-gray-300 file:ml-3 file:py-1 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-bold file:bg-amber-500 file:text-gray-950 hover:file:bg-amber-600 cursor-pointer">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-300 mb-1">السعر</label>
+                            <input type="text" id="prodPrice" required placeholder="مثال: 500,000 ج.م" class="w-full bg-gray-800 border border-gray-700 rounded-xl px-3 py-2 text-sm text-white focus:outline-none focus:border-amber-500">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-300 mb-1">المواصفات الفنية</label>
+                            <textarea id="prodSpecs" rows="2" required placeholder="القدرة الحصانية والمحرك..." class="w-full bg-gray-800 border border-gray-700 rounded-xl px-3 py-2 text-sm text-white focus:outline-none focus:border-amber-500"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-amber-500 hover:bg-amber-600 text-gray-950 font-bold py-2.5 rounded-xl transition shadow-md text-xs">
+                            نشر الماكينة في الكتالوج
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Tool 2: Add Social / Video Links -->
+                <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6 shadow-xl">
+                    <h3 class="text-base font-bold text-white mb-4 flex items-center space-x-2 space-x-reverse">
+                        <i class="fa-solid fa-video text-amber-400"></i>
+                        <span>إضافة فيديوهات وروابط (يوتيوب / فيسبوك)</span>
+                    </h3>
+                    <form onsubmit="handleAddVideo(event)" class="space-y-3">
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-300 mb-1">عنوان الفيديو أو المنشور</label>
+                            <input type="text" id="vidTitle" required placeholder="تشغيل خط إنتاج أعلاف الدواجن..." class="w-full bg-gray-800 border border-gray-700 rounded-xl px-3 py-2 text-sm text-white focus:outline-none focus:border-amber-500">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-300 mb-1">رابط يوتيوب أو فيسبوك</label>
+                            <input type="url" id="vidUrl" required placeholder="https://www.youtube.com/watch?v=..." class="w-full bg-gray-800 border border-gray-700 rounded-xl px-3 py-2 text-sm text-white focus:outline-none focus:border-amber-500">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-300 mb-1">نوع المنصة</label>
+                            <select id="vidPlatform" class="w-full bg-gray-800 border border-gray-700 rounded-xl px-3 py-2 text-sm text-white focus:outline-none focus:border-amber-500">
+                                <option value="youtube">يوتيوب (YouTube)</option>
+                                <option value="facebook">فيسبوك (Facebook)</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="w-full bg-amber-500 hover:bg-amber-600 text-gray-950 font-bold py-2.5 rounded-xl transition shadow-md text-xs">
+                            إضافة الفيديو للموقع
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Tool 3: Customize Background, Colors, Logo & Identity -->
+                <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6 shadow-xl">
+                    <h3 class="text-base font-bold text-white mb-4 flex items-center space-x-2 space-x-reverse">
+                        <i class="fa-solid fa-palette text-amber-400"></i>
+                        <span>تخصيص الألوان، الخلفية، الشعار وهة الموقع</span>
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-2 gap-2">
+                            <div>
+                                <label class="block text-[11px] font-semibold text-gray-300 mb-1">لون خلفية الموقع</label>
+                                <input type="color" id="bgColorPicker" value="#0f172a" onchange="changeBackgroundColor(this.value)" class="w-full h-8 bg-gray-800 rounded-lg cursor-pointer border border-gray-700">
+                            </div>
+                            <div>
+                                <label class="block text-[11px] font-semibold text-gray-300 mb-1">لون الأزرار والتنقل</label>
+                                <input type="color" id="btnColorPicker" value="#f59e0b" onchange="changeButtonColor(this.value)" class="w-full h-8 bg-gray-800 rounded-lg cursor-pointer border border-gray-700">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-300 mb-1">رفع خلفية صناعية (لل بطاقة الهيرو فقط)</label>
+                            <input type="file" id="heroBgUploadFile" accept="image/*" onchange="handleHeroBackgroundUpload(event)" class="w-full bg-gray-800 border border-gray-700 rounded-xl px-3 py-1 text-xs text-gray-300 file:ml-2 file:py-1 file:px-2 file:rounded-lg file:border-0 file:text-xs file:font-bold file:bg-amber-500 file:text-gray-950 cursor-pointer">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-300 mb-1">رفع شعار الشركة والأيقونة (بدون إطار برتقالي)</label>
+                            <input type="file" id="logoFaviconUploadFile" accept="image/*" onchange="handleLogoFaviconUpload(event)" class="w-full bg-gray-800 border border-gray-700 rounded-xl px-3 py-1 text-xs text-gray-300 file:ml-2 file:py-1 file:px-2 file:rounded-lg file:border-0 file:text-xs file:font-bold file:bg-amber-500 file:text-gray-950 cursor-pointer">
+                        </div>
+                        <div>
+                            <div class="space-y-2">
+                                <input type="text" id="adminSiteTitle" placeholder="السلام للصناعات الهندسية والتوريدات" class="w-full bg-gray-800 border border-gray-700 rounded-xl px-3 py-1.5 text-xs text-white">
+                                <input type="text" id="adminPhoneNumbers" placeholder="01066107495" class="w-full bg-gray-800 border border-gray-700 rounded-xl px-3 py-1.5 text-xs text-white">
+                                <button onclick="saveSiteIdentity()" class="w-full bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 rounded-xl text-xs border border-gray-700 transition">
+                                    حفظ وتطبيق البيانات
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Products Catalog -->
+    <main id="products" class="flex-grow max-w-7xl mx-auto px-4 py-16 w-full">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
+            <div>
+                <span class="text-amber-400 text-sm font-bold uppercase tracking-wider block mb-2">كتالوج المنتجات والمعدات</span>
+                <h2 class="text-3xl lg:text-4xl font-black text-white">آلات ومعدات تجهيز وإنتاج الأعلاف</h2>
+            </div>
+            <div class="mt-4 md:mt-0 text-sm text-gray-400">
+                إجمالي المعروض: <span id="productCountBadge" class="text-amber-400 font-bold">0</span> منتج
+            </div>
+        </div>
+
+        <!-- Products Grid Container -->
+        <div id="productsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Dynamic Product Cards will be injected here -->
+        </div>
+    </main>
+
+    <!-- Videos Section -->
+    <section id="videos" class="bg-gray-900/40 border-t border-gray-800 py-16 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="text-amber-400 text-xs font-bold uppercase tracking-wider block mb-2">مرئيات تشغيل المصانع</span>
+                <h2 class="text-3xl font-black text-white">فيديوهات وروابط تشغيل خطوط الأعلاف</h2>
+                <p class="text-gray-400 text-xs mt-2">شاهد فيديوهات اليوتيوب والفيسبوك الخاصة بأداء المكابس والدشاشات وخلاطات الأعلاف</p>
+            </div>
+            <div id="videosGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Dynamic Video Embeds will be injected here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Contact Section -->
+    <section id="about" class="bg-gray-900/60 border-t border-gray-800 py-16 px-4">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-amber-400 text-xs font-bold uppercase tracking-wider block mb-2">لماذا تختار معداتنا؟</span>
+                <h2 class="text-3xl font-black text-white mb-6">السلام للصناعات الهندسية والتوريدات</h2>
+                <p class="text-gray-300 leading-relaxed mb-6">
+                    رواد تصنيع وتوريد آلات تجهيز وإنتاج الأعلاف الحيوانية في مصر والشرق الأوسط. نقدم حلولاً هندسية متكاملة لخطوط إنتاج أعلاف الدواجن، المواشي، والأسماك بأعلى جودة وكفاءة تشغيلية.
+                </p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-gray-800/80 p-4 rounded-xl border border-gray-700">
+                        <i class="fa-solid fa-award text-amber-400 text-2xl mb-2"></i>
+                        <h4 class="font-bold text-white text-sm">خبرة أكثر من 15 سنة</h4>
+                        <p class="text-xs text-gray-400 mt-1">سجل حافل من التميز والريادة في تصنيع خطوط الأعلاف.</p>
+                    </div>
+                    <div class="bg-gray-800/80 p-4 rounded-xl border border-gray-700">
+                        <i class="fa-solid fa-headset text-amber-400 text-2xl mb-2"></i>
+                        <h4 class="font-bold text-white text-sm">دعم فني هندسي</h4>
+                        <p class="text-xs text-gray-400 mt-1">فريق هندسي جاهز للتركيب والصيانة الدورية.</p>
+                    </div>
+                </div>
+                <div class="mt-4 bg-amber-500/10 border border-amber-500/30 p-4 rounded-xl text-amber-300 text-xs font-semibold flex items-center space-x-3 space-x-reverse">
+                    <i class="fa-solid fa-gem text-amber-400 text-lg"></i>
+                    <span>نبتكر أحدث الحلول الهندسية لنضمن لعملائنا أعلى كفاءة إنتاجية وأقل استهلاك للطاقة بأعلى معايير الأمان العالمية.</span>
+                </div>
+            </div>
+            <div id="contact" class="bg-gray-900 border border-gray-800 p-8 rounded-3xl shadow-2xl">
+                <h3 class="text-2xl font-bold text-white mb-6 flex items-center space-x-2 space-x-reverse">
+                    <i class="fa-solid fa-envelope-open-text text-amber-400"></i>
+                    <span>تواصل معنا لطلب عرض سعر</span>
+                </h3>
+                <div id="displayPhoneInfo" class="mb-4 bg-amber-500/10 border border-amber-500/30 text-amber-300 p-3 rounded-xl text-xs font-bold">
+                    <i class="fa-solid fa-phone-volume ml-2"></i> الأرقام الرسمية: 01066107495
+                </div>
+                <form onsubmit="handleContactSubmit(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-300 mb-1">الاسم الكريم أو اسم الشركة</label>
+                        <input type="text" required placeholder="شركة الإخوة للأعلاف..." class="w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-300 mb-1">رقم الهاتف / واتساب</label>
+                        <input type="tel" required placeholder="010xxxxxxxx" class="w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-300 mb-1">تفاصيل الطلب أو الاستفسار</label>
+                        <textarea rows="3" required placeholder="أحتاج استفسار عن خط إنتاج أعلاف دواجن 10 طن..." class="w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-amber-500 hover:bg-amber-600 text-gray-950 font-bold py-3.5 rounded-xl transition shadow-lg">
+                        إرسال الطلب الآن
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 border-t border-gray-900 py-8 px-4 text-center text-sm text-gray-500">
+        <p id="footerCompanyName">© 2026 جميع الحقوق محفوظة لشركة السلام للصناعات الهندسية والتوريدات.</p>
+        <p class="text-xs text-amber-400/80 mt-1">المدير العام: zhranzhran396@gmail.com</p>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden">
+        <div class="bg-gray-900 border border-gray-800 w-full max-w-md p-8 rounded-3xl shadow-2xl relative mx-4">
+            <button onclick="closeModals()" class="absolute top-6 left-6 text-gray-400 hover:text-white">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+            <div class="text-center mb-6">
+                <div class="bg-amber-500/10 text-amber-400 w-12 h-12 rounded-2xl mx-auto flex items-center justify-center text-xl mb-3 border border-amber-500/20">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <h3 class="text-xl font-black text-white">تسجيل الدخول إلى النظام</h3>
+                <p class="text-xs text-gray-400 mt-1">متاح للمدير العام ولجميع العملاء والمستخدمين الجدد</p>
+            </div>
+            <form onsubmit="handleLoginSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold text-gray-300 mb-1">البريد الإلكتروني</label>
+                    <input type="email" id="loginEmail" required placeholder="name@example.com" class="w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-gray-300 mb-1">كلمة المرور (مشفرة ومحمية)</label>
+                    <input type="password" id="loginPassword" required placeholder="••••••••" class="w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
+                </div>
+                <button type="submit" class="w-full bg-amber-500 hover:bg-amber-600 text-gray-950 font-bold py-3.5 rounded-xl transition shadow-lg">
+                    دخول آمن
+                </button>
+            </form>
+            <div class="mt-4 text-center">
+                <button onclick="openRegisterModal()" class="text-xs text-amber-400 hover:underline">ليس لديك حساب؟ سجل حساب جديد الآن</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="registerModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden">
+        <div class="bg-gray-900 border border-gray-800 w-full max-w-md p-8 rounded-3xl shadow-2xl relative mx-4">
+            <button onclick="closeModals()" class="absolute top-6 left-6 text-gray-400 hover:text-white">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+            <div class="text-center mb-6">
+                <div class="bg-amber-500/10 text-amber-400 w-12 h-12 rounded-2xl mx-auto flex items-center justify-center text-xl mb-3 border border-amber-500/20">
+                    <i class="fa-solid fa-user-plus"></i>
+                </div>
+                <h3 class="text-xl font-black text-white">إنشاء حساب جديد</h3>
+                <p class="text-xs text-gray-400 mt-1">حسابات آمنة ومشفرة بالكامل لجميع المستخدمين</p>
+            </div>
+            <form onsubmit="handleRegisterSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold text-gray-300 mb-1">الاسم الكامل</label>
+                    <input type="text" id="regName" required placeholder="محمد أحمد" class="w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-gray-300 mb-1">البريد الإلكتروني</label>
+                    <input type="email" id="regEmail" required placeholder="name@example.com" class="w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-gray-300 mb-1">كلمة المرور (مشفرة)</label>
+                    <input type="password" id="regPassword" required placeholder="••••••••" class="w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
+                </div>
+                <button type="submit" class="w-full bg-amber-500 hover:bg-amber-600 text-gray-950 font-bold py-3.5 rounded-xl transition shadow-lg">
+                    إنشاء الحساب وتفعيل الدخول
+                </button>
+            </form>
+            <div class="mt-4 text-center">
+                <button onclick="openLoginModal()" class="text-xs text-amber-400 hover:underline">لديك حساب بالفعل؟ سجل دخولك الآن</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Zoom Modal (Lightbox) -->
+    <div id="imageZoomModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-md hidden p-4">
+        <button onclick="closeImageZoom()" class="absolute top-6 left-6 text-white text-2xl hover:text-amber-400 z-50 bg-gray-800/80 w-12 h-12 rounded-full flex items-center justify-center">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="relative max-w-5xl max-h-[90vh] flex items-center justify-center">
+            <img id="zoomedImg" src="" alt="Zoomed Product" class="max-w-full max-h-[85vh] object-contain rounded-2xl shadow-2xl border border-gray-700">
+        </div>
+    </div>
+
+    <!-- Edit Product Modal (Admin Only) with Image Deletion Feature -->
+    <div id="editProductModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden">
+        <div class="bg-gray-900 border border-gray-800 w-full max-w-lg p-8 rounded-3xl shadow-2xl relative mx-4 max-h-[90vh] overflow-y-auto">
+            <button onclick="closeEditProductModal()" class="absolute top-6 left-6 text-gray-400 hover:text-white">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+            <div class="text-center mb-6">
+                <div class="bg-amber-500/10 text-amber-400 w-12 h-12 rounded-2xl mx-auto flex items-center justify-center text-xl mb-3 border border-amber-500/20">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </div>
+                <h3 class="text-xl font-black text-white">تعديل تفاصيل الماكينة</h3>
+                <p class="text-xs text-gray-400 mt-1">تحديث الاسم، السعر، المواصفات، أو حذف وإضافة صور جديدة</p>
+            </div>
+            <form id="editProductForm" onsubmit="handleEditProductSubmit(event)" class="space-y-4">
+                <input type="hidden" id="editProdId">
+                <div>
+                    <label class="block text-xs font-semibold text-gray-300 mb-1">اسم الماكينة</label>
+                    <input type="text" id="editProdName" required class="w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-gray-300 mb-1">السعر</label>
+                    <input type="text" id="editProdPrice" required class="w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-gray-300 mb-1">المواصفات الفنية</label>
+                    <textarea id="editProdSpecs" rows="3" required class="w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500"></textarea>
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-gray-300 mb-2">إدارة صور المنتج الحالية (اضغط على أيقونة الحذف لإزالة أي صورة خاطئة):</label>
+                    <div id="editImagesContainer" class="flex flex-wrap gap-3 bg-gray-800/60 p-3 rounded-xl border border-gray-700 min-h-[70px] items-center">
+                        <!-- Dynamic removable images will be injected here -->
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-gray-300 mb-1">إضافة صور جديدة (اختياري)</label>
+                    <input type="file" id="editProdNewImages" accept="image/*" multiple class="w-full bg-gray-800 border border-gray-700 rounded-xl px-3 py-1.5 text-xs text-gray-300 file:ml-3 file:py-1 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-bold file:bg-amber-500 file:text-gray-950 cursor-pointer">
+                </div>
+                <button type="submit" class="w-full bg-amber-500 hover:bg-amber-600 text-gray-950 font-bold py-3 rounded-xl transition shadow-lg text-xs">
+                    حفظ التعديلات والتحديث الفوري
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Custom MessageBox Modal -->
+    <div id="messageModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden">
+        <div class="bg-gray-900 border border-gray-800 w-full max-w-sm p-6 rounded-3xl shadow-2xl text-center mx-4">
+            <div id="msgIcon" class="text-amber-400 text-4xl mb-3">
+                <i class="fa-solid fa-circle-info"></i>
+            </div>
+            <h4 id="msgTitle" class="text-lg font-bold text-white mb-2">تنبيه النظام</h4>
+            <p id="msgText" class="text-sm text-gray-300 mb-6">رسالة توضيحية هنا...</p>
+            <button onclick="closeMessageBox()" class="w-full bg-amber-500 hover:bg-amber-600 text-gray-950 font-bold py-2.5 rounded-xl transition">
+                موافق
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Default initial products catalog
+        const defaultProducts = [
+            {
+                id: '1',
+                name: 'مكبس أعلاف حلقي (Pellet Mill 5T)',
+                images: [
+                    'https://placehold.co/600x400/1e293b/f59e0b?text=Pellet+Mill+1',
+                    'https://placehold.co/600x400/334155/f59e0b?text=Pellet+Mill+2'
+                ],
+                price: '650,000 ج.م',
+                specs: 'القدرة الانتاجية: 4-5 طن/ساعة، قدرة المحرك: 110 كيلوواط، نظام نقل حركة بتروس عالية الصلابة.'
+            },
+            {
+                id: '2',
+                name: 'دشاش أعلاف مطرقي (Hammer Mill)',
+                images: [
+                    'https://placehold.co/600x400/1e293b/f59e0b?text=Hammer+Mill+1'
+                ],
+                price: '280,000 ج.م',
+                specs: 'عدد المطارق: 64 مطرقة صلب مقاوم للتآكل، سرعة الدوران 2900 دورة/دقيقة.'
+            }
+        ];
+
+        // Default videos list
+        const defaultVideos = [
+            {
+                id: 'v1',
+                title: 'خطوات تشغيل خط إنتاج أعلاف الدواجن الكامل',
+                url: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+                platform: 'youtube'
+            }
+        ];
+
+        // UTF-8 Safe Base64 Helpers
+        function safeBtoa(str) {
+            return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, function(match, p1) {
+                return String.fromCharCode('0x' + p1);
+            }));
+        }
+
+        // State Management with Persistent LocalStorage
+        let products = JSON.parse(localStorage.getItem('feed_machinery_products')) || defaultProducts;
+        let videos = JSON.parse(localStorage.getItem('feed_machinery_videos')) || defaultVideos;
+        let users = JSON.parse(localStorage.getItem('feed_machinery_users')) || [
+            { name: 'المدير العام', email: 'zhranzhran396@gmail.com', pass: safeBtoa('01066107495abcd') }
+        ];
+        let currentUser = JSON.parse(localStorage.getItem('feed_machinery_current_user')) || null;
+        
+        // Persistent customization variables
+        let currentBgColor = localStorage.getItem('feed_machinery_bg_color') || '#0f172a';
+        let currentBtnColor = localStorage.getItem('feed_machinery_btn_color') || '#f59e0b';
+        let currentHeroBgImage = localStorage.getItem('feed_machinery_hero_bg') || '';
+        let currentFavicon = localStorage.getItem('feed_machinery_favicon') || '';
+        let currentLogo = localStorage.getItem('feed_machinery_logo') || '';
+        let siteTitleText = localStorage.getItem('feed_machinery_site_title') || 'السلام للصناعات الهندسية والتوريدات';
+        let phoneNumbersText = localStorage.getItem('feed_machinery_phones') || '01066107495';
+
+        // Temporary array for image deletion in edit modal
+        let editingImagesList = [];
+
+        // Initialize App on Window Load
+        window.onload = function() {
+            applySiteIdentity();
+            renderAuthUI();
+            renderProducts();
+            renderVideos();
+            checkAdminPermissions();
+        };
+
+        // Custom Message Box function
+        function showMessage(title, text, isSuccess = true) {
+            document.getElementById('msgTitle').innerText = title;
+            document.getElementById('msgText').innerText = text;
+            const iconDiv = document.getElementById('msgIcon');
+            iconDiv.innerHTML = isSuccess ? '<i class="fa-solid fa-circle-check text-amber-400"></i>' : '<i class="fa-solid fa-triangle-exclamation text-red-400"></i>';
+            document.getElementById('messageModal').classList.remove('hidden');
+        }
+
+        function closeMessageBox() {
+            document.getElementById('messageModal').classList.add('hidden');
+        }
+
+        // Modal Controls
+        function openLoginModal() {
+            closeModals();
+            document.getElementById('loginModal').classList.remove('hidden');
+        }
+
+        function openRegisterModal() {
+            closeModals();
+            document.getElementById('registerModal').classList.remove('hidden');
+        }
+
+        function closeModals() {
+            document.getElementById('loginModal').classList.add('hidden');
+            document.getElementById('registerModal').classList.add('hidden');
+        }
+
+        // Image Zoom Lightbox
+        function openImageZoom(imgSrc) {
+            document.getElementById('zoomedImg').src = imgSrc;
+            document.getElementById('imageZoomModal').classList.remove('hidden');
+        }
+
+        function closeImageZoom() {
+            document.getElementById('imageZoomModal').classList.add('hidden');
+        }
+
+        // Authentication Handlers
+        function handleRegisterSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('regName').value.trim();
+            const email = document.getElementById('regEmail').value.trim();
+            const password = document.getElementById('regPassword').value;
+
+            if(users.some(u => u.email === email)) {
+                showMessage('خطأ في التسجيل', 'البريد الإلكتروني مسجل بالفعل مسبقاً!', false);
+                return;
+            }
+
+            const newUser = { name, email, pass: safeBtoa(password) };
+            users.push(newUser);
+            localStorage.setItem('feed_machinery_users', JSON.stringify(users));
+
+            currentUser = { name, email };
+            localStorage.setItem('feed_machinery_current_user', JSON.stringify(currentUser));
+
+            closeModals();
+            renderAuthUI();
+            checkAdminPermissions();
+            renderProducts();
+            showMessage('تم بنجاح', 'تم تسجيل حسابك وتفعيل الدخول الآمن.');
+        }
+
+        function handleLoginSubmit(event) {
+            event.preventDefault();
+            const email = document.getElementById('loginEmail').value.trim();
+            const password = document.getElementById('loginPassword').value;
+
+            const foundUser = users.find(u => u.email === email && u.pass === safeBtoa(password));
+            if(!foundUser) {
+                showMessage('خطأ في تسجيل الدخول', 'البريد الإلكتروني أو كلمة المرور غير صحيحة!', false);
+                return;
+            }
+
+            currentUser = { name: foundUser.name, email: foundUser.email };
+            localStorage.setItem('feed_machinery_current_user', JSON.stringify(currentUser));
+
+            closeModals();
+            renderAuthUI();
+            checkAdminPermissions();
+            renderProducts();
+            showMessage('مرحباً بك', `تم تسجيل دخولك بنجاح أهلاً بك يا ${foundUser.name}`);
+        }
+
+        function logout() {
+            currentUser = null;
+            localStorage.removeItem('feed_machinery_current_user');
+            renderAuthUI();
+            checkAdminPermissions();
+            renderProducts();
+            window.scrollTo({top: 0, behavior: 'smooth'});
+            showMessage('تسجيل الخروج', 'تم تسجيل خروجك من النظام بأمان.');
+        }
+
+        // Render Navigation Auth Controls
+        function renderAuthUI() {
+            const authArea = document.getElementById('authStatusArea');
+            if (currentUser) {
+                const isAdmin = currentUser.email === 'zhranzhran396@gmail.com';
+                authArea.innerHTML = `
+                    <div class="flex items-center space-x-3 space-x-reverse bg-gray-800/80 border border-gray-700 px-3 py-1.5 rounded-xl">
+                        <div class="bg-amber-500 text-gray-950 w-7 h-7 rounded-lg flex items-center justify-center font-bold text-xs">
+                            ${currentUser.name.charAt(0)}
+                        </div>
+                        <div class="text-right">
+                            <span class="block text-xs font-bold text-white">${currentUser.name}</span>
+                            <span class="block text-[10px] text-amber-400">${isAdmin ? 'مدير الموقع العام' : 'مستخدم مسجل'}</span>
+                        </div>
+                        <button onclick="logout()" title="تسجيل الخروج" class="text-gray-400 hover:text-red-400 mr-2 transition">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        </button>
+                    </div>
+                `;
+            } else {
+                authArea.innerHTML = `
+                    <button onclick="openLoginModal()" class="bg-amber-500 hover:bg-amber-600 text-gray-950 font-bold px-4 py-2 rounded-xl text-xs transition shadow-md">
+                        تسجيل الدخول
+                    </button>
+                    <button onclick="openRegisterModal()" class="bg-gray-800 hover:bg-gray-700 text-white font-bold px-4 py-2 rounded-xl text-xs border border-gray-700 transition">
+                        حساب جديد
+                    </button>
+                `;
+            }
+        }
+
+        // Check Admin Permissions
+        function checkAdminPermissions() {
+            const adminSection = document.getElementById('adminToolkitSection');
+            if (currentUser && currentUser.email === 'zhranzhran396@gmail.com') {
+                adminSection.classList.remove('hidden');
+            } else {
+                adminSection.classList.add('hidden');
+            }
+        }
+
+        // Render Products Catalog with Multiple Images
+        function renderProducts() {
+            const grid = document.getElementById('productsGrid');
+            document.getElementById('productCountBadge').innerText = products.length;
+            grid.innerHTML = '';
+
+            const isAdmin = currentUser && currentUser.email === 'zhranzhran396@gmail.com';
+
+            products.forEach((prod) => {
+                let imgList = prod.images || ['https://placehold.co/600x400/1e293b/f59e0b?text=Machinery'];
+                
+                let thumbnailsHtml = '';
+                imgList.forEach((imgUrl) => {
+                    thumbnailsHtml += `
+                        <img src="${imgUrl}" alt="thumb" class="w-12 h-12 object-cover rounded-lg border-2 border-amber-500/40 hover:border-amber-400 cursor-pointer shadow-md transition" onclick="switchMainImage('${prod.id}', '${imgUrl}')">
+                    `;
+                });
+
+                const card = document.createElement('div');
+                card.className = "bg-gray-900 border border-gray-800 rounded-3xl overflow-hidden shadow-xl flex flex-col justify-between transition transform hover:-translate-y-1 hover:border-amber-500/50";
+                card.innerHTML = `
+                    <div>
+                        <div class="relative h-56 bg-gray-800 overflow-hidden group">
+                            <img id="main-img-${prod.id}" src="${imgList[0]}" alt="${prod.name}" class="w-full h-full object-cover cursor-pointer transition transform group-hover:scale-105" onclick="openImageZoom('${imgList[0]}')" title="اضغط لتكبير الصورة">
+                            <span class="absolute top-4 right-4 bg-amber-500 text-gray-950 text-xs font-black px-3 py-1 rounded-full shadow-lg">
+                                ${prod.price}
+                            </span>
+                            <div class="absolute bottom-2 left-2 right-2 bg-black/60 backdrop-blur-sm p-1.5 rounded-xl flex items-center justify-center space-x-2 space-x-reverse overflow-x-auto">
+                                ${thumbnailsHtml}
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold text-white mb-2">${prod.name}</h3>
+                            <p class="text-xs text-gray-300 leading-relaxed bg-gray-800/50 p-3 rounded-xl border border-gray-800">
+                                <strong class="text-amber-400 block mb-1">المواصفات الفنية:</strong>
+                                ${prod.specs}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 flex flex-col gap-2">
+                        <div class="flex items-center justify-between gap-3">
+                            <a href="#contact" class="flex-1 bg-amber-500/10 hover:bg-amber-500 hover:text-gray-950 text-amber-400 border border-amber-500/30 text-center font-bold text-xs py-2.5 rounded-xl transition">
+                                اطلب تفاصيل السعر
+                            </a>
+                            ${isAdmin ? `
+                                <button onclick="deleteProduct('${prod.id}')" title="إلغاء وحذف الماكينة" class="bg-red-500/10 hover:bg-red-500 text-red-400 hover:text-white border border-red-500/30 px-3 py-2.5 rounded-xl text-xs transition flex items-center space-x-1 space-x-reverse">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                            ` : ''}
+                        </div>
+                        ${isAdmin ? `
+                            <button onclick="openEditProductModal('${prod.id}')" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 rounded-xl text-xs transition flex items-center justify-center space-x-2 space-x-reverse shadow-md">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                                <span>تعديل (تعديل السعر، الوصف وصور الماكينة)</span>
+                            </button>
+                        ` : ''}
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function switchMainImage(prodId, imgUrl) {
+            const mainImg = document.getElementById(`main-img-${prodId}`);
+            if(mainImg) {
+                mainImg.src = imgUrl;
+                mainImg.setAttribute('onclick', `openImageZoom('${imgUrl}')`);
+            }
+        }
+
+        // Render Videos with Robust YouTube URL Parsing
+        function renderVideos() {
+            const grid = document.getElementById('videosGrid');
+            grid.innerHTML = '';
+            const isAdmin = currentUser && currentUser.email === 'zhranzhran396@gmail.com';
+
+            videos.forEach((vid) => {
+                let embedHtml = '';
+                let rawUrl = vid.url.trim();
+
+                if (vid.platform === 'youtube') {
+                    let embedUrl = rawUrl;
+                    if (rawUrl.includes('watch?v=')) {
+                        embedUrl = rawUrl.replace('watch?v=', 'embed/');
+                        // Remove extra query parameters if any exist
+                        if (embedUrl.includes('&')) {
+                            embedUrl = embedUrl.split('&')[0];
+                        }
+                    } else if (rawUrl.includes('youtu.be/')) {
+                        const videoId = rawUrl.split('youtu.be/')[1].split('?')[0];
+                        embedUrl = `https://www.youtube.com/embed/${videoId}`;
+                    } else if (!rawUrl.includes('embed/')) {
+                        // Fallback conversion attempt
+                        embedUrl = `https://www.youtube.com/embed/${rawUrl}`;
+                    }
+                    embedHtml = `<div class="relative w-full h-48 rounded-xl overflow-hidden bg-black"><iframe class="w-full h-full" src="${embedUrl}" title="${vid.title}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`;
+                } else {
+                    embedHtml = `<div class="bg-gray-800 p-6 rounded-xl text-center text-sm"><i class="fa-brands fa-facebook text-amber-400 text-3xl mb-2"></i><br><a href="${rawUrl}" target="_blank" class="text-amber-400 underline">مشاهدة منشور أو فيديو الفيسبوك</a></div>`;
+                }
+
+                const card = document.createElement('div');
+                card.className = "bg-gray-900 border border-gray-800 p-5 rounded-2xl shadow-xl flex flex-col justify-between";
+                card.innerHTML = `
+                    <div>
+                        <div class="mb-3">${embedHtml}</div>
+                        <h4 class="font-bold text-white text-sm mb-2">${vid.title}</h4>
+                    </div>
+                    ${isAdmin ? `
+                        <div class="mt-4 pt-3 border-t border-gray-800 text-left">
+                            <button onclick="deleteVideo('${vid.id}')" class="text-red-400 hover:text-red-300 text-xs">
+                                <i class="fa-solid fa-trash ml-1"></i> حذف الفيديو
+                            </button>
+                        </div>
+                    ` : ''}
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // Admin Product Management
+        function handleAddProduct(event) {
+            event.preventDefault();
+            if(!currentUser || currentUser.email !== 'zhranzhran396@gmail.com') return;
+
+            const name = document.getElementById('prodName').value.trim();
+            const price = document.getElementById('prodPrice').value.trim();
+            const specs = document.getElementById('prodSpecs').value.trim();
+            const fileInput = document.getElementById('prodImageFiles');
+
+            if(fileInput.files && fileInput.files.length > 0) {
+                let imagesArray = [];
+                let filesProcessed = 0;
+                
+                Array.from(fileInput.files).forEach((file, index) => {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        imagesArray[index] = e.target.result;
+                        filesProcessed++;
+                        
+                        if(filesProcessed === fileInput.files.length) {
+                            const newProd = {
+                                id: Date.now().toString(),
+                                name,
+                                images: imagesArray,
+                                price,
+                                specs
+                            };
+                            products.unshift(newProd);
+                            localStorage.setItem('feed_machinery_products', JSON.stringify(products));
+                            document.getElementById('addProductForm').reset();
+                            renderProducts();
+                            showMessage('تمت الإضافة بنجاح', 'تم رفع صور الماكينة وإضافتها للكتالوج.');
+                        }
+                    };
+                    reader.readAsDataURL(file);
+                });
+            }
+        }
+
+        function deleteProduct(id) {
+            if(!currentUser || currentUser.email !== 'zhranzhran396@gmail.com') return;
+            products = products.filter(p => p.id !== id);
+            localStorage.setItem('feed_machinery_products', JSON.stringify(products));
+            renderProducts();
+            showMessage('تم الإلغاء', 'تم إلغاء الماكينة وحذفها من الكتالوج بنجاح.');
+        }
+
+        // Open Edit Product Modal with Image Deletion capabilities
+        function openEditProductModal(id) {
+            const prod = products.find(p => p.id === id);
+            if(!prod) return;
+
+            document.getElementById('editProdId').value = prod.id;
+            document.getElementById('editProdName').value = prod.name;
+            document.getElementById('editProdPrice').value = prod.price;
+            document.getElementById('editProdSpecs').value = prod.specs;
+            document.getElementById('editProdNewImages').value = '';
+
+            editingImagesList = [...(prod.images || [])];
+            renderEditImagesPreview();
+
+            document.getElementById('editProductModal').classList.remove('hidden');
+        }
+
+        function renderEditImagesPreview() {
+            const container = document.getElementById('editImagesContainer');
+            container.innerHTML = '';
+
+            if(editingImagesList.length === 0) {
+                container.innerHTML = `<span class="text-xs text-red-400">لا توجد صور حالية. يرجى إضافة صورة جديدة على الأقل.</span>`;
+                return;
+            }
+
+            editingImagesList.forEach((imgSrc, idx) => {
+                const wrapper = document.createElement('div');
+                wrapper.className = "relative group w-14 h-14 bg-gray-900 rounded-lg overflow-hidden border border-gray-600";
+                wrapper.innerHTML = `
+                    <img src="${imgSrc}" class="w-full h-full object-cover">
+                    <button type="button" onclick="removeEditingImage(${idx})" title="حذف هذه الصورة" class="absolute top-0.5 right-0.5 bg-red-600 text-white w-5 h-5 rounded-full flex items-center justify-center text-[10px] shadow hover:bg-red-700 transition">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                `;
+                container.appendChild(wrapper);
+            });
+        }
+
+        function removeEditingImage(index) {
+            if(editingImagesList.length <= 1) {
+                showMessage('تنبيه', 'لا يمكن حذف جميع الصور! يجب أن تبقى صورة واحدة على الأقل للمنتج.', false);
+                return;
+            }
+            editingImagesList.splice(index, 1);
+            renderEditImagesPreview();
+        }
+
+        function closeEditProductModal() {
+            document.getElementById('editProductModal').classList.add('hidden');
+        }
+
+        // Handle Edit Product Submission
+        function handleEditProductSubmit(event) {
+            event.preventDefault();
+            if(!currentUser || currentUser.email !== 'zhranzhran396@gmail.com') return;
+
+            const id = document.getElementById('editProdId').value;
+            const name = document.getElementById('editProdName').value.trim();
+            const price = document.getElementById('editProdPrice').value.trim();
+            const specs = document.getElementById('editProdSpecs').value.trim();
+            const fileInput = document.getElementById('editProdNewImages');
+
+            let prodIndex = products.findIndex(p => p.id === id);
+            if(prodIndex === -1) return;
+
+            if(fileInput.files && fileInput.files.length > 0) {
+                let newImagesProcessed = 0;
+                let newlyUploaded = [];
+
+                Array.from(fileInput.files).forEach((file) => {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        newlyUploaded.push(e.target.result);
+                        newImagesProcessed++;
+
+                        if(newImagesProcessed === fileInput.files.length) {
+                            let finalImages = [...editingImagesList, ...newlyUploaded];
+                            products[prodIndex] = { id, name, images: finalImages, price, specs };
+                            localStorage.setItem('feed_machinery_products', JSON.stringify(products));
+                            closeEditProductModal();
+                            renderProducts();
+                            showMessage('تم التعديل بنجاح', 'تم تحديث بيانات المنتج وصوره بنجاح.');
+                        }
+                    };
+                    reader.readAsDataURL(file);
+                });
+            } else {
+                products[prodIndex] = { id, name, images: editingImagesList, price, specs };
+                localStorage.setItem('feed_machinery_products', JSON.stringify(products));
+                closeEditProductModal();
+                renderProducts();
+                showMessage('تم التعديل بنجاح', 'تم تحديث بيانات المنتج بنجاح.');
+            }
+        }
+
+        // Admin Video Management
+        function handleAddVideo(event) {
+            event.preventDefault();
+            if(!currentUser || currentUser.email !== 'zhranzhran396@gmail.com') return;
+
+            const title = document.getElementById('vidTitle').value.trim();
+            const url = document.getElementById('vidUrl').value.trim();
+            const platform = document.getElementById('vidPlatform').value;
+
+            const newVid = { id: Date.now().toString(), title, url, platform };
+            videos.unshift(newVid);
+            localStorage.setItem('feed_machinery_videos', JSON.stringify(videos));
+            event.target.reset();
+            renderVideos();
+            showMessage('تمت الإضافة', 'تم إضافة الفيديو أو الرابط بنجاح.');
+        }
+
+        function deleteVideo(id) {
+            if(!currentUser || currentUser.email !== 'zhranzhran396@gmail.com') return;
+            videos = videos.filter(v => v.id !== id);
+            localStorage.setItem('feed_machinery_videos', JSON.stringify(videos));
+            renderVideos();
+            showMessage('تم الحذف', 'تم إزالة الفيديو بنجاح.');
+        }
+
+        // Customization Handlers with Persistent LocalStorage
+        function changeBackgroundColor(colorHex) {
+            if(!currentUser || currentUser.email !== 'zhranzhran396@gmail.com') return;
+            currentBgColor = colorHex;
+            localStorage.setItem('feed_machinery_bg_color', currentBgColor);
+            applySiteIdentity();
+        }
+
+        function changeButtonColor(colorHex) {
+            if(!currentUser || currentUser.email !== 'zhranzhran396@gmail.com') return;
+            currentBtnColor = colorHex;
+            localStorage.setItem('feed_machinery_btn_color', currentBtnColor);
+            applySiteIdentity();
+        }
+
+        function handleHeroBackgroundUpload(event) {
+            if(!currentUser || currentUser.email !== 'zhranzhran396@gmail.com') return;
+            const file = event.target.files[0];
+            if(file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    currentHeroBgImage = e.target.result;
+                    localStorage.setItem('feed_machinery_hero_bg', currentHeroBgImage);
+                    applySiteIdentity();
+                    showMessage('تغيير الخلفية', 'تم رفع الخلفية الصناعية للبطاقة وتطبيقها بنجاح.');
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+
+        function handleLogoFaviconUpload(event) {
+            if(!currentUser || currentUser.email !== 'zhranzhran396@gmail.com') return;
+            const file = event.target.files[0];
+            if(file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    currentLogo = e.target.result;
+                    currentFavicon = e.target.result;
+                    localStorage.setItem('feed_machinery_logo', currentLogo);
+                    localStorage.setItem('feed_machinery_favicon', currentFavicon);
+                    applySiteIdentity();
+                    showMessage('تغيير الشعار', 'تم رفع شعار الشركة وأيقونة الموقع وتطبيقها بنجاح.');
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+
+        function saveSiteIdentity() {
+            if(!currentUser || currentUser.email !== 'zhranzhran396@gmail.com') {
+                showMessage('صلاحيات المدير', 'هذا التعديل مخصص لمدير الموقع فقط.', false);
+                return;
+            }
+            const newTitle = document.getElementById('adminSiteTitle').value.trim();
+            const newPhones = document.getElementById('adminPhoneNumbers').value.trim();
+
+            if(newTitle) {
+                siteTitleText = newTitle;
+                localStorage.setItem('feed_machinery_site_title', siteTitleText);
+            }
+            if(newPhones) {
+                phoneNumbersText = newPhones;
+                localStorage.setItem('feed_machinery_phones', phoneNumbersText);
+            }
+
+            applySiteIdentity();
+            showMessage('تم التحديث', 'تم حفظ وتحديث اسم الموقع وأرقام الهواتف بنجاح.');
+        }
+
+        // Apply All Persistent Identity & Colors
+        function applySiteIdentity() {
+            const body = document.getElementById('mainBody');
+            body.style.backgroundColor = currentBgColor;
+
+            // Hero Card Background Overlay
+            const heroCard = document.getElementById('heroCardBanner');
+            const heroCardOverlay = document.getElementById('heroCardBgImageOverlay');
+            if(currentHeroBgImage) {
+                heroCardOverlay.style.backgroundImage = `url('${currentHeroBgImage}')`;
+                heroCardOverlay.classList.remove('hidden');
+            } else {
+                heroCardOverlay.classList.add('hidden');
+            }
+
+            // Button & Nav accent updates
+            const heroCta = document.getElementById('heroCtaBtn');
+            if(heroCta) {
+                heroCta.style.backgroundColor = currentBtnColor;
+            }
+
+            if(currentFavicon) {
+                document.getElementById('dynamicFavicon').href = currentFavicon;
+            }
+
+            if(currentLogo) {
+                document.getElementById('brandLogoImg').src = currentLogo;
+            }
+
+            document.getElementById('pageHeaderTitle').innerText = siteTitleText;
+            document.getElementById('navBrandName').innerText = siteTitleText;
+            document.getElementById('footerCompanyName').innerText = `© 2026 جميع الحقوق محفوظة لشركة ${siteTitleText}.`;
+            document.getElementById('displayPhoneInfo').innerHTML = `<i class="fa-solid fa-phone-volume ml-2"></i> الأرقام الرسمية: ${phoneNumbersText}`;
+        }
+
+        function handleContactSubmit(event) {
+            event.preventDefault();
+            showMessage('تم إرسال الطلب', 'شكراً لتواصلك معنا. سيقوم فريق المبيعات الفنية بالتواصل معك في أقرب وقت.');
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>
